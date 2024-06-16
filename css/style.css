@@ -97,14 +97,6 @@ body {
     width: auto;
 }
 
-.top-index a .exit {
-    position: relative;
-    top: 10%;
-    right: 10%;
-    height: 80%;
-    width: auto;
-}
-
 .hamburger {
     display: flex;
     flex-direction: column;
@@ -118,8 +110,9 @@ body {
     position: absolute;
     top: 50px;
     left: 10px;
-    background-color: #333;
+    background-color: #b4e3fd;
     width: 200px;
+    border-radius: 7px;
 }
 
 .nav-item {
@@ -127,14 +120,14 @@ body {
 }
 
 .nav-link {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
     padding: 10px 20px;
     display: block;
 }
 
 .nav-link:hover {
-    background-color: #575757;
+    background-color: #66aed6;
 }
 
 .nav-menu.active {
@@ -175,6 +168,4 @@ body {
 .card:hover {
     transform: scale(1.009);
 }
-
-/* menu */
 
