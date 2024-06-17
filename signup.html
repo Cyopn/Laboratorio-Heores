@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Registro</title>
 </head>
+
 <body>
-    
+    <header>
+        <div class="top">
+            <h1>Registrate</h1>
+        </div>
+    </header>
+    <main>
+        <div class="form" id="form">
+            <p>Matricula</p>
+            <input type="text">
+            <p>Nombre</p>
+            <input type="text">
+            <p>Apellidos</p>
+            <input type="text">
+            <p>Nombre de usuario</p>
+            <input type="text" required>
+            <p>Contraseña</p>
+            <input type="text" required>
+            <p>Repetir contraseña</p>
+            <input type="text">
+            <p>Cargo</p>
+            <select id="cargo">
+                <option value="selecciona_uno">Selecciona uno</option>
+                <option value="alumno">Alumno</option>
+                <option value="profesor">Profesor</option>
+            </select>
+            <p></p>
+            <button type="submit">Registrate</button>
+        </div>
+    </main>
+    <script src="./js/script.js"></script>
 </body>
+
 </html>

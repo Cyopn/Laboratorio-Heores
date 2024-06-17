@@ -4,7 +4,7 @@ body {
     background-color: #e3f5ff;
 }
 
-.top-login {
+.top {
     display: flex;
     background-color: #66aed6;
     height: 55px;
@@ -13,32 +13,36 @@ body {
     border-bottom-right-radius: 15px;
 }
 
-.top-login h1 {
+.top h1 {
     margin: 0 auto;
     color: #ffffff;
     padding-top: 10px;
 }
 
-.form-login {
+.form {
     max-width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    position: absolute;
-    left: 50%;
+    position: relative;
     top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    left: 50%;
+    -webkit-transform: translate(50%, 10px);
+    transform: translate(-125%, 10px);
+    padding-bottom: 25px;
 }
 
-.form-login p {
+.form p {
+    width: 100%;
+    text-align: center;
     font-size: 1.3em;
     margin: 0 auto;
-    padding: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
-.form-login button {
+.form button {
     height: 42px;
     background-color: #7abadd;
     border-style: none;
@@ -51,13 +55,13 @@ body {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.form-login button:hover {
+.form button:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px #66aed6;
 }
 
-.form-login input {
-    height: 27px;
+.form input {
+    text-align: center;
     width: 100%;
     padding: 5px;
     border-radius: 5px;
@@ -66,9 +70,18 @@ body {
     font-size: 1.2em;
 }
 
-.form-login input:focus {
+.form input:focus {
     outline: none;
     box-shadow: 0 4px 4px #66aed6;
+}
+
+.form select{
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #b4e3fd;
+    font-size: 1.2em;
 }
 
 /* Index */
@@ -168,4 +181,3 @@ body {
 .card:hover {
     transform: scale(1.009);
 }
-
