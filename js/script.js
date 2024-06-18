@@ -7,13 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
 			});
 		}
 
-		if (document.getElementById("nav-menu")) {
-			const navMenu = document.getElementById("nav-menu");
-			navMenu.addEventListener("click", function () {
-				navMenu.classList.remove("active");
-			});
-		}
-
 		if (document.getElementById("cargo")) {
 			const cargo = document.getElementById("cargo");
 			cargo.addEventListener("change", function (e) {
@@ -62,18 +55,30 @@ document.addEventListener("DOMContentLoaded", function () {
 				<button type="submit">Registrate</button>`;
 				} else if (selectedOption === "proesfor") {
 				} else if (selectedOption === "selecciona_uno") {
-					form.innerHTML = `<p>Matricula</p>
-				<input type="text">
-				<p>Nombre</p>
-				<input type="text">
-				<p>Apellidos</p>
-				<input type="text">
-				<p>Nombre de usuario</p>
-				<input type="text" required>
-				<p>Contraseña</p>
-				<input type="text" required>
-				<p>Repetir contraseña</p>
-				<input type="text">
+					form.innerHTML = form.innerHTML.replace(
+						`<button type="submit">Registrate</button>`,
+						``,
+					);
+					form.innerHTML = form.innerHTML.replace(`<p>Cargo</p>`, ``);
+					form.innerHTML = form.innerHTML.replace(
+						`<select id="cargo">`,
+						``,
+					);
+					form.innerHTML = form.innerHTML.replace(
+						`<option value="selecciona_uno">Selecciona uno</option>`,
+						``,
+					);
+					form.innerHTML = form.innerHTML.replace(
+						`<option value="alumno">Alumno</option>`,
+						``,
+					);
+					form.innerHTML = form.innerHTML.replace(
+						`<option value="profesor">Profesor</option>`,
+						``,
+					);
+					form.innerHTML = form.innerHTML.replace(`</select>`, ``);
+					form.innerHTML = form.innerHTML.replace(`<p></p>`, ``);
+					form.innerHTML += `
 				<p>Cargo</p>
 				<select id="cargo">
 					<option value="selecciona_uno">Selecciona uno</option>
@@ -85,8 +90,12 @@ document.addEventListener("DOMContentLoaded", function () {
 				}
 			});
 		}
+
+		const navMenu = document.getElementById("nav-menu");
+		navMenu.addEventListener("click", function () {
+			navMenu.classList.remove("active");
+		});
 	} catch (error) {
 		console.error(error);
 	}
 });
-
