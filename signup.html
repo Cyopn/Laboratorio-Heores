@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Registro</title>
+<html lang="es">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/style.css">
+<title>Registro</title>
 </head>
 
 <body>
@@ -23,19 +21,19 @@
             <p>Apellidos</p>
             <input type="text">
             <p>Nombre de usuario</p>
-            <input type="text" required>
+            <input type="text">
+            <p>Numero</p>
+            <input type="number">
             <p>Contraseña</p>
-            <input type="text" required>
+            <input type="text">
             <p>Repetir contraseña</p>
             <input type="text">
             <p>Cargo</p>
             <select id="cargo" onchange="reloadGUI(this)">
                 <option value="selecciona_uno">Selecciona uno</option>
+                <option value="profesor">Profesor</option>
                 <option value="alumno">Alumno</option>
-                <option value="profesor" >Profesor</option>
             </select>
-            <p></p>
-            <button type="submit">Registrate</button>
         </div>
     </main>
     <script src="./js/functions.js"></script>

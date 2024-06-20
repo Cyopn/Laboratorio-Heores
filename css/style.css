@@ -1,6 +1,6 @@
 /* Login */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetia, sans-serif;
     background-color: #e3f5ff;
 }
 
@@ -42,6 +42,14 @@ body {
     padding-bottom: 15px;
 }
 
+.form .inicio {
+    padding-bottom: 15px;
+}
+
+.form i {
+    padding: 15px;
+}
+
 .form button {
     height: 42px;
     background-color: #7abadd;
@@ -75,7 +83,7 @@ body {
     box-shadow: 0 4px 4px #66aed6;
 }
 
-.form select{
+.form select {
     width: 100%;
     padding: 5px;
     border-radius: 5px;
@@ -182,3 +190,39 @@ body {
 .card:hover {
     transform: scale(1.009);
 }
+
+/* User */
+
+footer {
+    position: absolute;
+    height: 70%;
+    background-color: #7abadd;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+footer .content{
+    background-color: #e3f5ff;
+    width: 80%;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translate(50%, 10px);
+    transform: translate(-60%, 10px);
+    padding-bottom: 25px;
+}
+
+footer .content .item{
+
+
+}
+
+footer .content .item .info{
+    
+}
+
