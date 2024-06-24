@@ -195,7 +195,7 @@ body {
 
 footer {
     position: absolute;
-    height: 70%;
+    height: auto;
     background-color: #7abadd;
     left: 10px;
     right: 10px;
@@ -204,25 +204,140 @@ footer {
     border-top-right-radius: 15px;
 }
 
-footer .content{
-    background-color: #e3f5ff;
-    width: 80%;
-    align-items: center;
-    margin: 0 auto;
+.content {
+    width: 100%;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
     padding: 10px;
+}
+
+.label {
+    flex: 1;
+    padding-left: 7%;
+}
+
+.info {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    height: auto;
+    padding-right: 20px;
+}
+
+.info input {
+    width: 40%;
+    text-align: right;
+    width: 80%;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #b4e3fd;
+    font-size: 1.2em;
+}
+
+.info input:focus {
+    outline: none;
+    box-shadow: 0 4px 4px #66aed6;
+}
+
+.scroll {
+    text-align: center;
+    overflow-y: scroll;
+    height: 285px;
+    width: 900px;
+}
+
+.top-index div .save {
     position: relative;
-    left: 50%;
-    -webkit-transform: translate(50%, 10px);
-    transform: translate(-60%, 10px);
-    padding-bottom: 25px;
+    cursor: pointer;
+    top: 10%;
+    right: 10%;
+    height: 80%;
+    width: auto;
 }
 
-footer .content .item{
+/* Supplie */
 
-
+.top-index div .shop {
+    position: relative;
+    cursor: pointer;
+    top: 10%;
+    right: 10%;
+    height: 80%;
+    width: auto;
 }
 
-footer .content .item .info{
+.top-index div input {
+    position: relative;
+    cursor: pointer;
+    top: 10%;
+    font-size: 1.2em;
+    height: 70%;
+    width: auto;
+    text-align: right;
+    color: white;
+    border: none;
+    background-color: #66aed6;
     
 }
 
+.supplies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(25% - 20px); /* 4 cards in a row with space between */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 1px solid #ccc;
+}
+
+.product-card h3 {
+    margin: 15px 0 10px;
+}
+
+.product-card p {
+    color: #555;
+}
+
+/* Responsiveness */
+@media (max-width: 1200px) {
+    .product-card {
+        width: calc(33.33% - 20px); /* 3 cards in a row */
+    }
+}
+
+@media (max-width: 900px) {
+    .product-card {
+        width: calc(50% - 20px); /* 2 cards in a row */
+    }
+}
+
+@media (max-width: 600px) {
+    .product-card {
+        width: 100%; /* 1 card in a row */
+    }
+}

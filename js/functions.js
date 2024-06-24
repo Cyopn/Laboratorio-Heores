@@ -16,10 +16,12 @@ function reloadGUI(e) {
             <input type="text" value="${temp[2]}">
             <p>Nombre de usuario</p>
             <input type="text" value="${temp[3]}">
+			<p>Numero movil</p>
+            <input type="number" value="${temp[4]}">
             <p>Contraseña</p>
-            <input type="password" value="${temp[4]}">
-            <p>Repetir contraseña</p>
             <input type="password" value="${temp[5]}">
+            <p>Repetir contraseña</p>
+            <input type="password" value="${temp[6]}">
             <p>Cargo</p>
 				<select id="cargo" onchange="reloadGUI(this)">
 				<option value="alumno">Alumno</option>
@@ -51,10 +53,12 @@ function reloadGUI(e) {
             <input type="text" value="${temp[2]}">
             <p>Nombre de usuario</p>
             <input type="text" value="${temp[3]}">
+			<p>Numero movil</p>
+            <input type="number" value="${temp[4]}">
             <p>Contraseña</p>
-            <input type="password" value="${temp[4]}">
-            <p>Repetir contraseña</p>
             <input type="password" value="${temp[5]}">
+            <p>Repetir contraseña</p>
+            <input type="password" value="${temp[6]}">
             <p>Cargo</p>
             <select id="cargo" onchange="reloadGUI(this)">
                 <option value="profesor">Profesor</option>
