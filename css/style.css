@@ -132,6 +132,15 @@ body {
     width: auto;
 }
 
+.top-index div .admin {
+    position: relative;
+    cursor: pointer;
+    top: 10%;
+    right: 10%;
+    height: 80%;
+    width: auto;
+}
+
 .hamburger {
     display: flex;
     flex-direction: column;

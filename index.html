@@ -4,49 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Tablero - Heroes del saber</title>
+    <title>Incio - Laboratorio Heroes</title>
 </head>
 
 <body>
     <header>
         <div class="top-index">
-            <div href="#" class="hamburger" id="hamburger">
-                <img class="user" src="./img/icons/user.svg">
+            <h1>Laboratorio Heroes del saber</h1>
+            <div class="hamburger" id="hamburger">
+                <img class="admin" src="./img/icons/admin-alt.svg">
             </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item"><a href="./user.html" class="nav-link">Cuenta</a></li>
-                <li class="nav-item"><a href="./login.html" class="nav-link">Cerrar sesion</a></li>
-            </ul>
-            <h1>Bienvenido</h1>
         </div>
     </header>
     <main>
         <div class="container">
-            <div class="card" onclick="location.href='./lend.html'">
-                <img src="./img/icons/add.svg" alt="">
-                <div class="card-content">
-                    <h2>Realizar prestamo</h2>
-                    <p>Solicita un prestamo a los encargados de laboratorio</p>
+            <header class="main-header clearfix">
+            </header>
+            <div class="content clearfix">
+                <div class="cube-container">
+                    <div class="photo-cube">
+                        <img class="front" src="./img/lab1.jpg" alt="">
+                        <div class="back photo-desc">
+                            <h3>Prestamos</h3>
+                            <p>Realiza tus prestamos de insumos para laboratorio de manera facil y rapida.
+                            </p>
+                        </div>
+                        <img class="left" src="./img/lab2.jpg" alt="">
+                        <img class="right" src="./img/lab3.jpg" alt="">
+                    </div>
                 </div>
-            </div>
-            <div class="card" onclick="location.href='./aside-product.html'">
-                <img src="./img/icons/calendar-clock.svg" alt="">
-                <div class="card-content">
-                    <h2>Apartar</h2>
-                    <p>Realizar un prestamo de insumos de laboratorio de forma anticipada</p>
+                <div class="cube-container">
+                    <div class="photo-cube">
+                        <img class="front" src="./img/ele1.jpg" alt="">
+                        <div class="back photo-desc">
+                            <h3>Aparatado</h3>
+                            <p>Realiza tus apartados de insumos para laboratorio de manera facil y rapida.
+                            </p>
+                        </div>
+                        <img class="left" src="./img/ele2.jpg" alt="">
+                        <img class="right" src="./img/ele3.jpg" alt="">
+                    </div>
                 </div>
-            </div>
-            <div class="card" onclick="location.href='./devolucion.html'">
-                <img src="./img/icons/edit.svg" alt="">
-                <div class="card-content">
-                    <h2>Devolver</h2>
-                    <p>Registra la devolucion de algun insumo</p>
+                <div class="cube-container">
+                    <div class="photo-cube">
+                        <img class="front" src="http://gdurl.com/tvtR" alt="">
+                        <div class="back photo-desc">
+                            <h3>The Milky Way</h3>
+                            <p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo.
+                            </p>
+                            <a href="#" class="button">download</a>
+                        </div>
+                        <img class="left" src="http://gdurl.com/tvtR" alt="">
+                        <img class="right" src="http://gdurl.com/VjHH" alt="">
+
+                    </div>
                 </div>
+
             </div>
         </div>
     </main>
-    <script src="./js/dom.js"></script>
 </body>
 
 </html>
