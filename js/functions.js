@@ -1,6 +1,8 @@
 function reloadGUI(e) {
 	const selectedOption = e.options[e.selectedIndex].value
 	const form = document.getElementById("form");
+	
+	console.log(form)
 	if (selectedOption === "alumno") {
 		let temp = []
 		form.childNodes.forEach(children => {
@@ -94,10 +96,12 @@ function reloadGUI(e) {
             <input type="text" value="${temp[2]}">
             <p>Nombre de usuario</p>
             <input type="text" value="${temp[3]}">
+			<p>Numero movil</p>
+            <input type="number" value="${temp[4]}">
             <p>Contraseña</p>
-            <input type="password" value="${temp[4]}">
-            <p>Repetir contraseña</p>
             <input type="password" value="${temp[5]}">
+            <p>Repetir contraseña</p>
+            <input type="password" value="${temp[6]}">
             <p>Cargo</p>
 				<select id="cargo" onchange="reloadGUI(this)">
 				<option value="selecciona_uno">Selecciona uno</option>

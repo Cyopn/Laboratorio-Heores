@@ -28,8 +28,22 @@ body {
     position: relative;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(50%, 10px);
-    transform: translate(-125%, 10px);
+    -webkit-transform: translate(50%, 50%);
+    transform: translate(-125%, 10%);
+    padding-bottom: 25px;
+}
+
+.form-l {
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(50%, 50%);
+    transform: translate(-125%, 10%);
     padding-bottom: 25px;
 }
 
@@ -260,84 +274,52 @@ footer {
     width: auto;
 }
 
-/* Supplie */
+/* Lend */
 
-.top-index div .shop {
-    position: relative;
-    cursor: pointer;
-    top: 10%;
-    right: 10%;
-    height: 80%;
-    width: auto;
-}
-
-.top-index div input {
-    position: relative;
-    cursor: pointer;
-    top: 10%;
-    font-size: 1.2em;
-    height: 70%;
-    width: auto;
-    text-align: right;
-    color: white;
-    border: none;
-    background-color: #66aed6;
-    
-}
-
-.supplies {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
-}
-
-.product-card {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: calc(25% - 20px); /* 4 cards in a row with space between */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
-    text-align: center;
-}
-
-.product-card img {
+.can{
     width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
 }
 
-.product-card h3 {
-    margin: 15px 0 10px;
+.can select {
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+    background-color: #b4e3fd;
+    font-size: 1.2em;
 }
 
-.product-card p {
-    color: #555;
+.can input {
+    width: 40%;
+    border-radius: 5px;
+    border: none;
+    background-color: #b4e3fd;
+    font-size: 1.2em;
 }
 
-/* Responsiveness */
-@media (max-width: 1200px) {
-    .product-card {
-        width: calc(33.33% - 20px); /* 3 cards in a row */
-    }
+.tbl {
+    width: 100%;
+    padding-bottom: 10px;
+    font-size: 1.2em;
 }
 
-@media (max-width: 900px) {
-    .product-card {
-        width: calc(50% - 20px); /* 2 cards in a row */
-    }
+.tbl table{
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
 }
 
-@media (max-width: 600px) {
-    .product-card {
-        width: 100%; /* 1 card in a row */
-    }
+.tbl table th {
+    background-color: #7abadd;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.tbl table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    color: #000000;
 }
