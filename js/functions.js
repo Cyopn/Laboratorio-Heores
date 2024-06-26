@@ -1,5 +1,5 @@
 function reloadGUI(e) {
-	const selectedOption = e.options[e.selecteddashboard].value
+	const selectedOption = e.options[e.selectedIndex].value
 	const form = document.getElementById("form");
 	
 	console.log(form)

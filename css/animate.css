@@ -2,30 +2,6 @@
 	box-sizing: border-box;
 }
 
-body {
-	font: 1em/1.5 'Open Sans', sans-serif;
-	color: #373737;
-	background: #eaeaea;
-	margin: 0;
-}
-
-a {
-	text-decoration: none;
-}
-
-h1,
-h2,
-h3 {
-	text-transform: uppercase;
-}
-
-h2 {
-	font-size: 1.125em;
-	color: #4a89ca;
-	font-weight: 600;
-	margin: 0;
-}
-
 h3 {
 	font-size: 1.3em;
 	line-height: 1.25em;
@@ -39,15 +15,11 @@ p {
 	margin: 0 0 1.5em;
 }
 
-.container,
-.content {
-	margin: auto;
-}
-
 .container {
-	width: 94.02985075%;
+	width: 100%;
 	max-width: 1260px;
 	padding: 0 2.25em 4em;
+	margin: 0 auto;
 }
 
 .main-header {
@@ -56,42 +28,9 @@ p {
 }
 
 .cube-container {
-	max-width: 200px;
+	max-width: 250px;
 	text-align: center;
 	margin: 0 auto 4.5em;
-}
-
-.name {
-	font-size: 1.65em;
-	font-weight: 800;
-	margin: 0 0 1.5em;
-	line-height: 1;
-}
-
-.name span {
-	font-weight: 300;
-	margin-left: -7px;
-}
-
-.logo {
-	width: 45px;
-	margin-bottom: .4em;
-	cursor: pointer;
-}
-
-.button {
-	font-size: .8em;
-	color: #fff;
-	width: 90%;
-	line-height: 1.15;
-	font-weight: 700;
-	display: block;
-	text-decoration: none;
-	text-transform: uppercase;
-	padding: .95em 0;
-	border-radius: .5em;
-	background: #b4e3fd;
-	margin: auto;
 }
 
 .photo-desc {
@@ -116,6 +55,7 @@ p {
 
 @media (min-width: 1025px) {
 	.cube-container:first-child {
+		float: left;
 		margin-left: 0;
 	}
 
@@ -124,17 +64,8 @@ p {
 	}
 
 	.content {
-		max-width: 900px;
-		margin: auto;
+		margin: 0 auto;
 	}
-}
-
-.button {
-	transition: background .3s;
-}
-
-.button:hover {
-	background: rgba(74, 137, 202, 1);
 }
 
 .cube-container {
@@ -144,8 +75,8 @@ p {
 
 .photo-cube {
 	transition: transform 2s ease-in-out;
-	width: 220px;
-	height: 220px;
+	width: 270px;
+	height: 270px;
 	transform-style: preserve-3d;
 }
 
@@ -164,7 +95,7 @@ p {
 }
 
 .front {
-	transform: translate3d(0, 0, 110px);
+	transform: translate3d(0, 0, 160px);
 }
 
 .back {

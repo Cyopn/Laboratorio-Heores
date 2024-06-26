@@ -33,20 +33,6 @@ body {
     padding-bottom: 25px;
 }
 
-.form-l {
-    max-width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(50%, 50%);
-    transform: translate(-125%, 10%);
-    padding-bottom: 25px;
-}
-
 .form p {
     width: 100%;
     text-align: center;
@@ -123,20 +109,20 @@ body {
     padding-top: 10px;
 }
 
-.top-index div .user {
+.top-index div .left {
     position: relative;
     cursor: pointer;
     top: 10%;
-    left: 10%;
+    left: 20%;
     height: 80%;
     width: auto;
 }
 
-.top-index div .admin {
+.top-index div .rigth {
     position: relative;
     cursor: pointer;
     top: 10%;
-    right: 10%;
+    right: 20%;
     height: 80%;
     width: auto;
 }
@@ -267,20 +253,28 @@ footer {
     box-shadow: 0 4px 4px #66aed6;
 }
 
+.info table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+}
+
+.info table th {
+    background-color: #66aed6;
+    padding: 10px;
+}
+
+.info table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    color: #000000;
+}
+
 .scroll {
     text-align: center;
     overflow-y: scroll;
     height: 285px;
     width: 900px;
-}
-
-.top-index div .save {
-    position: relative;
-    cursor: pointer;
-    top: 10%;
-    right: 10%;
-    height: 80%;
-    width: auto;
 }
 
 /* Lend */
@@ -331,4 +325,33 @@ footer {
     padding: 10px;
     border: 1px solid #ddd;
     color: #000000;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.buttons div{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.buttons button {
+    height: 42px;
+    background-color: #7abadd;
+    border-style: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.buttons button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px #66aed6;
 }
