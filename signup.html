@@ -18,19 +18,19 @@
     <main>
         <div class="form" id="form">
             <p>Matricula</p>
-            <input type="text">
+             <input type="number" id="matric">
             <p>Nombre</p>
-            <input type="text">
+            <input type="text" id="nombre">
             <p>Apellidos</p>
-            <input type="text">
+            <input type="text" id="apelli">
             <p>Nombre de usuario</p>
-            <input type="text">
+            <input type="text" id="userna">
             <p>Numero movil</p>
-            <input type="number">
+            <input type="number" id="numero">
             <p>Contraseña</p>
-            <input type="text">
+            <input type="password" id="contra">
             <p>Repetir contraseña</p>
-            <input type="text">
+            <input type="password" id="contrr">
             <p>Cargo</p>
             <select id="cargo" onchange="reloadGUI(this)">
                 <option value="selecciona_uno">Selecciona uno</option>
@@ -38,6 +38,10 @@
                 <option value="alumno">Alumno</option>
             </select>
         </div>
+
+        <dialog id="modal">
+        </dialog>
+
     </main>
     <script src="./js/functions.js"></script>
 </body>

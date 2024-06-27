@@ -280,7 +280,7 @@ footer {
 
 /* Lend */
 
-.can{
+.can {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -309,7 +309,7 @@ footer {
     font-size: 1.2em;
 }
 
-.tbl table{
+.tbl table {
     text-align: center;
     width: 100%;
     border-collapse: collapse;
@@ -328,13 +328,13 @@ footer {
     color: #000000;
 }
 
-.buttons{
+.buttons {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-.buttons div{
+.buttons div {
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -355,4 +355,36 @@ footer {
 .buttons button:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px #66aed6;
+}
+
+dialog {
+    width: 50%;
+    border-radius: 5px;
+    border-style: double;
+    background-color: #e3f5ff;
+    border-color: #66aed6;
+}
+
+dialog p {
+    text-align: center;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+.dialog-button {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #7abadd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dialog-button:hover {
+    background-color: #66aed6;
 }
