@@ -16,7 +16,7 @@
             </div>
             <ul class="nav-menu" id="nav-menu">
                 <li class="nav-item"><a href="./user.html" class="nav-link">Cuenta</a></li>
-                <li class="nav-item"><a href="./login.html" class="nav-link">Cerrar sesion</a></li>
+                <li class="nav-item"><a onclick="logout()" class="nav-link">Cerrar sesion</a></li>
             </ul>
             <h1>Bienvenido</h1>
         </div>
@@ -46,7 +46,10 @@
             </div>
             <br>
         </div>
+        <dialog id="modal">
+        </dialog>
     </main>
+    <script src="./js/functions.js"></script>
     <script src="./js/dom.js"></script>
 </body>
 

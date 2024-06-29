@@ -20,19 +20,20 @@
     <main>
         <div class="form">
             <p>Ingresar usuario</p>
-            <input type="text">
+            <input type="text" id="username">
             <p>Ingresar contraseña</p>
-            <input type="text">
+            <input type="password" id="password">
             <br>
             <a href="#">¿Olvidaste tu contraseña?</a>
             <br>
             <a href="./signup.html">Registrate</a>
             <br>
-            <a href="./dashboard.html">
-                <button>Iniciar sesion</button>
-            </a>
+            <button onclick="login()">Iniciar sesion</button>
         </div>
+        <dialog id="modal">
+        </dialog>
     </main>
+    <script src="./js/functions.js"></script>
 </body>
 
 </html>

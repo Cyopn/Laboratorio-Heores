@@ -15,12 +15,14 @@
                 <img class="left" src="./img/icons/home.svg">
             </div>
             <h1>Bienvenido</h1>
-            <div>
+            <div id="update" onclick="prepareUserUpdate()">
                 <img class="rigth" src="./img/icons/floppy-disk-pen.svg">
             </div>
         </div>
     </header>
-    <main>
+    <dialog id="modal"></dialog>
+    <main class="loader-background">
+        <div class="loader" id="loader"></div>
     </main>
     <footer>
         <div class="content">
@@ -30,7 +32,7 @@
                     <h3>Nombre de usuario</h3>
                 </div>
                 <div class="info">
-                    <input type="text">
+                    <input type="text" id="username">
                 </div>
             </div>
             <div class="item">
@@ -38,7 +40,7 @@
                     <h3>Matricula</h3>
                 </div>
                 <div class="info">
-                    <input type="text" readonly>
+                    <input type="text" id="matricula" readonly>
                 </div>
             </div>
             <div class="item">
@@ -46,7 +48,15 @@
                     <h3>Nombre</h3>
                 </div>
                 <div class="info">
-                    <input type="text" readonly>
+                    <input type="text" id="nombre" readonly>
+                </div>
+            </div>
+            <div class="item">
+                <div class="label">
+                    <h3>Apellidos</h3>
+                </div>
+                <div class="info">
+                    <input type="text" id="apellidos" readonly>
                 </div>
             </div>
             <div class="item">
@@ -54,7 +64,7 @@
                     <h3>Numero movil</h3>
                 </div>
                 <div class="info">
-                    <input type="number">
+                    <input type="number" maxlength="10" id="numero">
                 </div>
             </div>
             <div class="item">
@@ -62,15 +72,23 @@
                     <h3>Contraseña</h3>
                 </div>
                 <div class="info">
-                    <input type="password">
+                    <input type="text" id="contraseña">
                 </div>
             </div>
             <div class="item">
                 <div class="label">
-                    <h3>Turno</h3>
+                    <h3>Cargo</h3>
                 </div>
                 <div class="info">
-                    <input type="text" readonly>
+                    <input type="text" id="cargo" readonly>
+                </div>
+            </div>
+            <div class="item">
+                <div class="label">
+                    <h3>Departamento</h3>
+                </div>
+                <div class="info">
+                    <input type="text" id="departamento" readonly>
                 </div>
             </div>
             <div class="item">
@@ -78,11 +96,21 @@
                     <h3>Grupo</h3>
                 </div>
                 <div class="info">
-                    <input type="text" readonly>
+                    <input type="text" id="grupo" readonly>
+                </div>
+            </div>
+            <div class="item">
+                <div class="label">
+                    <h3>Turno</h3>
+                </div>
+                <div class="info">
+                    <input type="text" id="turno" readonly>
                 </div>
             </div>
         </div>
     </footer>
+    <script src="./js/dom.js"></script>
+    <script src="./js/functions.js"></script>
 </body>
 
 </html>
