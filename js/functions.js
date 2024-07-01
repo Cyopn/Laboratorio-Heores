@@ -126,7 +126,7 @@ function saveUser() {
 				window.modal.showModal();
 			} else {
 				const xhttp = new XMLHttpRequest();
-				xhttp.open("POST", "http://127.0.0.1:4000/saveUser/", true);
+				xhttp.open("POST", "https://8f0b0525-3b3c-4875-af4e-19700379a090-00-ij7v0lfrj4jd.riker.replit.dev//saveUser/", true);
 				xhttp.setRequestHeader(
 					"Content-Type",
 					"application/json;charset=UTF-8",
@@ -166,7 +166,7 @@ function saveUser() {
 				window.modal.showModal();
 			} else {
 				const xhttp = new XMLHttpRequest();
-				xhttp.open("POST", "http://127.0.0.1:4000/saveUser/", true);
+				xhttp.open("POST", "https://8f0b0525-3b3c-4875-af4e-19700379a090-00-ij7v0lfrj4jd.riker.replit.dev//saveUser/", true);
 				xhttp.setRequestHeader(
 					"Content-Type",
 					"application/json;charset=UTF-8",
@@ -200,7 +200,7 @@ function login() {
 		return
 	}
 	const xhttp = new XMLHttpRequest();
-	xhttp.open("POST", "http://127.0.0.1:4000/getLogin/", true);
+	xhttp.open("POST", "https://8f0b0525-3b3c-4875-af4e-19700379a090-00-ij7v0lfrj4jd.riker.replit.dev//getLogin/", true);
 	xhttp.setRequestHeader(
 		"Content-Type",
 		"application/json;charset=UTF-8",
@@ -252,7 +252,7 @@ function updateSelfUser() {
 	const grupo = document.getElementById("grupo").value === undefined ? null : document.getElementById("grupo").value
 	const turno = document.getElementById("turno").value === undefined ? null : document.getElementById("turno").value
 	const xhttp = new XMLHttpRequest();
-	xhttp.open("POST", "http://127.0.0.1:4000/updateUser/", true);
+	xhttp.open("POST", "https://8f0b0525-3b3c-4875-af4e-19700379a090-00-ij7v0lfrj4jd.riker.replit.dev//updateUser/", true);
 	xhttp.setRequestHeader(
 		"Content-Type",
 		"application/json;charset=UTF-8",
@@ -300,7 +300,7 @@ function updateSelfUserA() {
 	const grupo = document.getElementById("grupo").value
 	const turno = document.getElementById("turno").value
 	const xhttp = new XMLHttpRequest();
-	xhttp.open("POST", "http://127.0.0.1:4000/updateUser/", true);
+	xhttp.open("POST", "https://8f0b0525-3b3c-4875-af4e-19700379a090-00-ij7v0lfrj4jd.riker.replit.dev//updateUser/", true);
 	xhttp.setRequestHeader(
 		"Content-Type",
 		"application/json;charset=UTF-8",
@@ -384,7 +384,7 @@ function saveLend() {
 		return
 	}
 	const xhttp = new XMLHttpRequest();
-	xhttp.open("POST", "http://127.0.0.1:4000/addLend/", true);
+	xhttp.open("POST", "https://8f0b0525-3b3c-4875-af4e-19700379a090-00-ij7v0lfrj4jd.riker.replit.dev//addLend/", true);
 	xhttp.setRequestHeader(
 		"Content-Type",
 		"application/json;charset=UTF-8",
@@ -447,7 +447,7 @@ function saveReserve() {
 		return
 	}
 	const xhttp = new XMLHttpRequest();
-	xhttp.open("POST", "http://127.0.0.1:4000/addLend/", true);
+	xhttp.open("POST", "https://8f0b0525-3b3c-4875-af4e-19700379a090-00-ij7v0lfrj4jd.riker.replit.dev//addLend/", true);
 	xhttp.setRequestHeader(
 		"Content-Type",
 		"application/json;charset=UTF-8",
@@ -544,7 +544,7 @@ function loginAdmin() {
 		return
 	}
 	const xhttp = new XMLHttpRequest();
-	xhttp.open("POST", "http://127.0.0.1:4000/getLoginAdmin/", true);
+	xhttp.open("POST", "https://8f0b0525-3b3c-4875-af4e-19700379a090-00-ij7v0lfrj4jd.riker.replit.dev//getLoginAdmin/", true);
 	xhttp.setRequestHeader(
 		"Content-Type",
 		"application/json;charset=UTF-8",
@@ -585,7 +585,7 @@ function updateLend() {
 	const id = document.getElementById("id").value
 	if (estado === "devuelto") return
 	const xhttp = new XMLHttpRequest();
-	xhttp.open("GET", "http://127.0.0.1:4000/updateLend/" + id, true);
+	xhttp.open("GET", "https://8f0b0525-3b3c-4875-af4e-19700379a090-00-ij7v0lfrj4jd.riker.replit.dev//updateLend/" + id, true);
 	xhttp.setRequestHeader(
 		"Content-Type",
 		"application/json;charset=UTF-8",
