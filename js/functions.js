@@ -263,7 +263,6 @@ function updateSelfUser() {
 	);
 	xhttp.onreadystatechange = function () {
 		if (this.readyState == 4 && this.status == 200) {
-			console.log(this.responseText)
 			const response = JSON.parse(this.responseText)
 			if (response.status === 200) {
 				const dialog = document.getElementById("modal");
@@ -312,7 +311,6 @@ function updateSelfUserA() {
 	);
 	xhttp.onreadystatechange = function () {
 		if (this.readyState == 4 && this.status == 200) {
-			console.log(this.responseText)
 			const response = JSON.parse(this.responseText)
 			if (response.status === 200) {
 				const dialog = document.getElementById("modal");
@@ -561,7 +559,6 @@ function loginAdmin() {
 			if (response.status === 200) {
 				localStorage.setItem("user", JSON.stringify(response.data))
 				const data = response.data
-				console.log(data)
 				if (data.admin) {
 					const dialog = document.getElementById("modal");
 					dialog.innerHTML = `<p>Bienvenido ${data.nombre}.</p><p><button class="dialog-button" onclick="closeModal('admin-dashboard')">Cerrar</button></p>`;
@@ -598,7 +595,6 @@ function updateLend() {
 			const response = JSON.parse(this.responseText)
 			if (response.status === 200) {
 				const data=response.result
-				console.log(data)
 				const dialog = document.getElementById("modal");
 				dialog.innerHTML = `<p>Prestamo devuelto.</p><p><button class="dialog-button" onclick="closeModal('admin-dashboard')">Cerrar</button></p>`;
 				window.modal.showModal();

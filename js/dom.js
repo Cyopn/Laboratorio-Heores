@@ -352,7 +352,6 @@ document.addEventListener("DOMContentLoaded", function () {
 				const data = response.result
 				if (response.status === 200) {
 					if (data.length > 0) {
-						console.log(data)
 						let strdata = ""
 						data.forEach(e => {
 							let insumos = ""
@@ -518,7 +517,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	if (window.location.href.includes("/admin-userview.")) {
 		const id = localStorage.getItem("id_user")
-		console.log(id)
 		const xhttp = new XMLHttpRequest();
 		xhttp.open("GET", "http://127.0.0.1:4000/getUser/" + id);
 		xhttp.send();
@@ -527,7 +525,6 @@ document.addEventListener("DOMContentLoaded", function () {
 				const response = JSON.parse(xhttp.responseText);
 				if (response.status == 200) {
 					let data = response.result
-					console.log(data)
 					data["update"] = false
 					localStorage.setItem("data", JSON.stringify(data))
 					document.getElementById("nombre").value = data.nombre;
@@ -591,7 +588,6 @@ document.addEventListener("DOMContentLoaded", function () {
 })
 
 function closeModal(location) {
-	console.log(location)
 	if (location === "none") {
 		window.modal.close();
 	} else {
