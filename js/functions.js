@@ -486,7 +486,7 @@ function showLend(card) {
 	})
 	id = id.replace("</h2>", "")
 	localStorage.setItem("id_lend", `"${id}"`)
-	window.location.href = `../devolutionview.html`
+	window.location.href = `../Laboratorio-Heores/devolutionview.html`
 }
 
 function showLendAdmin(card) {
@@ -499,7 +499,7 @@ function showLendAdmin(card) {
 	})
 	id = id.replace("</h2>", "")
 	localStorage.setItem("id_lend", `"${id}"`)
-	window.location.href = `../admin-devolutionview.html`
+	window.location.href = `../Laboratorio-Heores/admin-devolutionview.html`
 }
 
 function showUser(card) {
@@ -512,7 +512,7 @@ function showUser(card) {
 	})
 	id = id.replace("</p>", "")
 	localStorage.setItem("id_user", `${id}`)
-	window.location.href = `../admin-userview.html`
+	window.location.href = `../Laboratorio-Heores/admin-userview.html`
 }
 
 function deleteRow(r) {
@@ -531,12 +531,12 @@ function closeModal(location) {
 
 function logout() {
 	localStorage.removeItem("user")
-	window.location.href = `../login.html`
+	window.location.href = `../Laboratorio-Heores/login.html`
 }
 
 function logoutAdmin() {
 	localStorage.removeItem("user")
-	window.location.href = `../login-admin.html`
+	window.location.href = `../Laboratorio-Heores/login-admin.html`
 }
 
 function loginAdmin() {
