@@ -204,6 +204,7 @@ function login() {
 	xhttp.setRequestHeader(
 		"Content-Type",
 		"application/json;charset=UTF-8",
+		"Access-Control-Allow-Origin", "*"
 	);
 	xhttp.send(
 		JSON.stringify({
@@ -256,6 +257,7 @@ function updateSelfUser() {
 	xhttp.setRequestHeader(
 		"Content-Type",
 		"application/json;charset=UTF-8",
+		"Access-Control-Allow-Origin", "*"
 	);
 	xhttp.send(
 		JSON.stringify({
@@ -304,6 +306,7 @@ function updateSelfUserA() {
 	xhttp.setRequestHeader(
 		"Content-Type",
 		"application/json;charset=UTF-8",
+		"Access-Control-Allow-Origin", "*"
 	);
 	xhttp.send(
 		JSON.stringify({
@@ -388,6 +391,7 @@ function saveLend() {
 	xhttp.setRequestHeader(
 		"Content-Type",
 		"application/json;charset=UTF-8",
+		"Access-Control-Allow-Origin", "*"
 	);
 	xhttp.send(
 		JSON.stringify({ id: user.id_usuario, entrega: new Date(Date.now()), devolucion: devolucion, data }),
@@ -451,6 +455,7 @@ function saveReserve() {
 	xhttp.setRequestHeader(
 		"Content-Type",
 		"application/json;charset=UTF-8",
+		"Access-Control-Allow-Origin", "*"
 	);
 	xhttp.send(
 		JSON.stringify({ id: user.id_usuario, entrega: entrega, devolucion: devolucion, data }),
@@ -548,6 +553,7 @@ function loginAdmin() {
 	xhttp.setRequestHeader(
 		"Content-Type",
 		"application/json;charset=UTF-8",
+		"Access-Control-Allow-Origin", "*"
 	);
 	xhttp.send(
 		JSON.stringify({
@@ -589,6 +595,7 @@ function updateLend() {
 	xhttp.setRequestHeader(
 		"Content-Type",
 		"application/json;charset=UTF-8",
+		"Access-Control-Allow-Origin", "*"
 	);
 	xhttp.send();
 	xhttp.onreadystatechange = function () {
