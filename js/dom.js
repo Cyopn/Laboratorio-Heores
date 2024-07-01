@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	if (window.location.href.includes("/user")) {
 		const user = JSON.parse(localStorage.getItem("user"))
 		const xhttp = new XMLHttpRequest();
-		xhttp.open("GET", "https://8f0b0525-3b3c-4875-af4e-19700379a090-00-ij7v0lfrj4jd.riker.replit.dev//getSelfUser/" + user.id);
+		xhttp.open("GET", "https://8f0b0525-3b3c-4875-af4e-19700379a090-00-ij7v0lfrj4jd.riker.replit.dev/getSelfUser/" + user.id);
 		xhttp.send();
 		xhttp.onreadystatechange = function () {
 			if (this.readyState == 4 && this.status == 200) {
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		document.getElementById("nombre").value = `${user.nombre} ${user.apellidos}`;
 		document.getElementById("matricula").value = user.matricula;
 		const xhttp = new XMLHttpRequest();
-		xhttp.open("GET", "https://8f0b0525-3b3c-4875-af4e-19700379a090-00-ij7v0lfrj4jd.riker.replit.dev//getInputs/");
+		xhttp.open("GET", "https://8f0b0525-3b3c-4875-af4e-19700379a090-00-ij7v0lfrj4jd.riker.replit.dev/getInputs/");
 		xhttp.send();
 		xhttp.onreadystatechange = function () {
 			const response = JSON.parse(this.responseText);
@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	if (window.location.href.includes("/devolution.")) {
 		const data = JSON.parse(localStorage.getItem("data"))
 		const xhttp = new XMLHttpRequest();
-		xhttp.open("GET", "https://8f0b0525-3b3c-4875-af4e-19700379a090-00-ij7v0lfrj4jd.riker.replit.dev//getLends/" + data.id_usuario);
+		xhttp.open("GET", "https://8f0b0525-3b3c-4875-af4e-19700379a090-00-ij7v0lfrj4jd.riker.replit.dev/getLends/" + data.id_usuario);
 		xhttp.send();
 		xhttp.onreadystatechange = function () {
 			const response = JSON.parse(this.responseText);
@@ -165,7 +165,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	if (window.location.href.includes("/admin-devolution.")) {
 		const data = JSON.parse(localStorage.getItem("data"))
 		const xhttp = new XMLHttpRequest();
-		xhttp.open("GET", "https://8f0b0525-3b3c-4875-af4e-19700379a090-00-ij7v0lfrj4jd.riker.replit.dev//getAllLendsE/");
+		xhttp.open("GET", "https://8f0b0525-3b3c-4875-af4e-19700379a090-00-ij7v0lfrj4jd.riker.replit.dev/getAllLendsE/");
 		xhttp.send();
 		xhttp.onreadystatechange = function () {
 			const response = JSON.parse(this.responseText);
@@ -220,7 +220,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	if (window.location.href.includes("/admin-reg-devolution.")) {
 		const xhttp = new XMLHttpRequest();
-		xhttp.open("GET", "https://8f0b0525-3b3c-4875-af4e-19700379a090-00-ij7v0lfrj4jd.riker.replit.dev//getAllLendsE/");
+		xhttp.open("GET", "https://8f0b0525-3b3c-4875-af4e-19700379a090-00-ij7v0lfrj4jd.riker.replit.dev/getAllLendsE/");
 		xhttp.send();
 		xhttp.onreadystatechange = function () {
 			const response = JSON.parse(this.responseText);
@@ -276,7 +276,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	if (window.location.href.includes("/devolutionview.")) {
 		const data = JSON.parse(localStorage.getItem("id_lend"))
 		const xhttp = new XMLHttpRequest();
-		xhttp.open("GET", "https://8f0b0525-3b3c-4875-af4e-19700379a090-00-ij7v0lfrj4jd.riker.replit.dev//getLend/" + data);
+		xhttp.open("GET", "https://8f0b0525-3b3c-4875-af4e-19700379a090-00-ij7v0lfrj4jd.riker.replit.dev/getLend/" + data);
 		xhttp.send();
 		xhttp.onreadystatechange = function () {
 			if (this.readyState === 4 && this.status === 200) {
@@ -343,7 +343,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	if (window.location.href.includes("/admin-historial.")) {
 		const xhttp = new XMLHttpRequest();
-		xhttp.open("GET", "https://8f0b0525-3b3c-4875-af4e-19700379a090-00-ij7v0lfrj4jd.riker.replit.dev//getAllLends/");
+		xhttp.open("GET", "https://8f0b0525-3b3c-4875-af4e-19700379a090-00-ij7v0lfrj4jd.riker.replit.dev/getAllLends/");
 		xhttp.send();
 		xhttp.onreadystatechange = function () {
 			const response = JSON.parse(this.responseText);
@@ -401,7 +401,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		const data = JSON.parse(localStorage.getItem("id_lend"))
 		document.getElementById("update").style["opacity"] = 0.5;
 		const xhttp = new XMLHttpRequest();
-		xhttp.open("GET", "https://8f0b0525-3b3c-4875-af4e-19700379a090-00-ij7v0lfrj4jd.riker.replit.dev//getLend/" + data);
+		xhttp.open("GET", "https://8f0b0525-3b3c-4875-af4e-19700379a090-00-ij7v0lfrj4jd.riker.replit.dev/getLend/" + data);
 		xhttp.send();
 		xhttp.onreadystatechange = function () {
 			if (this.readyState === 4 && this.status === 200) {
@@ -471,7 +471,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	if (window.location.href.includes("/admin-users.")) {
 		const xhttp = new XMLHttpRequest();
-		xhttp.open("GET", "https://8f0b0525-3b3c-4875-af4e-19700379a090-00-ij7v0lfrj4jd.riker.replit.dev//getUsers/");
+		xhttp.open("GET", "https://8f0b0525-3b3c-4875-af4e-19700379a090-00-ij7v0lfrj4jd.riker.replit.dev/getUsers/");
 		xhttp.send();
 		xhttp.onreadystatechange = function () {
 			const response = JSON.parse(this.responseText);
@@ -518,7 +518,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	if (window.location.href.includes("/admin-userview.")) {
 		const id = localStorage.getItem("id_user")
 		const xhttp = new XMLHttpRequest();
-		xhttp.open("GET", "https://8f0b0525-3b3c-4875-af4e-19700379a090-00-ij7v0lfrj4jd.riker.replit.dev//getUser/" + id);
+		xhttp.open("GET", "https://8f0b0525-3b3c-4875-af4e-19700379a090-00-ij7v0lfrj4jd.riker.replit.dev/getUser/" + id);
 		xhttp.send();
 		xhttp.onreadystatechange = function () {
 			if (this.readyState == 4 && this.status == 200) {
