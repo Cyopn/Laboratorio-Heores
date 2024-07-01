@@ -1,3 +1,5 @@
+import 'https://tomashubelbauer.github.io/github-pages-local-storage/index.js';
+
 function reloadGUI(e) {
 	const selectedOption = e.options[e.selectedIndex].value
 	const form = document.getElementById("form");
