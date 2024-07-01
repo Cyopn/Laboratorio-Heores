@@ -591,7 +591,7 @@ function closeModal(location) {
 	if (location === "none") {
 		window.modal.close();
 	} else {
-		window.location.href = `../${location}.html`
+		window.location.href = `../Laboratorio-Heores/${location}.html`
 		window.modal.close();
 	}
 }
