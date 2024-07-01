@@ -29,9 +29,9 @@
             <br><br>
             <div class="can">
                 <select id="sel">
-                    <option value="selecciona_uno">Selecciona uno</option>
+                    <option value="selo">Selecciona un equipo</option>
                 </select>
-                <input type="number" value="0" min="0">
+                <input type="number" min="0" id="cn">
             </div>
             <br><br>
             <button type="button" onclick="addInput()">Agregar</button>
@@ -40,23 +40,22 @@
                     <tr>
                         <th>Insumo</th>
                         <th>Cantidad</th>
-                    </tr>
-                    <tr>
-                        <!-- innerHTML -->
+                        <th>Eliminar</th>
                     </tr>
                 </table>
             </div>
-            <p>Nombre</p>
-            <input type="text" readonly>
             <p>Matricula</p>
-            <input type="text" readonly>
-            <p>Fecha de devolucion</p>
-            <input type="date">
+            <input type="text" id="nombre" readonly>
+            <p>Nombre</p>
+            <input type="text" id="matricula" readonly>
             <br>
-            <a href="./dashboard.html">
-                <button>Continuar</button>
-            </a>
+            <p>Fecha de devolucion</p>
+            <input type="date" id="devolucion">
+            <br>
+            <button onclick="saveLend()">Continuar</button>
         </div>
+        <dialog id="modal">
+        </dialog>
     </main>
     <script src="./js/dom.js"></script>
     <script src="./js/functions.js"></script>

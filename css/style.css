@@ -429,3 +429,16 @@ input[type="number"]::-webkit-inner-spin-button {
 input[type="number"] {
     appearance: textfield;
 }
+
+.trash-button{
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.trash-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px #66aed6;
+}

@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Historial admin - Laobratorio Heores</title>
 </head>
+
 <body>
     <header>
         <div class="top-index">
@@ -16,16 +18,14 @@
         </div>
     </header>
     <main>
-        <div class="container">
-            <div class="card" onclick="location.href='./lend.html'">
-                <img src="./img/icons/time-check.svg" alt="">
-                <div class="card-content">
-                    <h2>Sin antecedentes</h2>
-                    <p>No existen prestamos anteriormente realizados</p>
-                </div>
-            </div>
-            <br>
+        <div class="loader-background">
+            <div class="loader" id="loader"></div>
+        </div>
+        <div class="container" id="container">
         </div>
     </main>
+    <script src="./js/dom.js"></script>
+    <script src="./js/functions.js"></script>
 </body>
+
 </html>

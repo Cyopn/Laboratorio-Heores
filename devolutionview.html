@@ -5,25 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Usuarios admin - Laboratorio Heroes</title>
+    <title>Cuenta - Laboratorio Heroes</title>
 </head>
 
 <body>
     <header>
         <div class="top-index">
-            <div onclick="location.href='./admin-dashboard.html'">
+            <div onclick="location.href='./dashboard.html'">
                 <img class="left" src="./img/icons/home.svg">
             </div>
-            <h1>Usuarios</h1>
+            <h1>Información de devolución</h1>
         </div>
     </header>
-    <main>
-        <div class="loader-background">
-            <div class="loader" id="loader"></div>
-        </div>
-        <div class="container" id="container">
-        </div>
+    <dialog id="modal"></dialog>
+    <main class="loader-background">
+        <div class="loader" id="loader"></div>
     </main>
+    <footer>
+        <div class="content" id="content">
+            <br>
+            <br>
+        </div>
+    </footer>
     <script src="./js/dom.js"></script>
     <script src="./js/functions.js"></script>
 </body>
