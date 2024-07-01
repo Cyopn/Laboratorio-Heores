@@ -247,9 +247,10 @@ function updateSelfUser() {
 	const username = document.getElementById("username").value
 	const numero = document.getElementById("numero").value
 	const password = document.getElementById("contraseña").value
-	const departamento = document.getElementById("departamento").value
-	const grupo = document.getElementById("grupo").value
-	const turno = document.getElementById("turno").value
+	const cargo = document.getElementById("cargo").value === undefined ? null : document.getElementById("cargo").value
+	const departamento = document.getElementById("departamento").value === undefined ? null : document.getElementById("departamento").value
+	const grupo = document.getElementById("grupo").value === undefined ? null : document.getElementById("grupo").value
+	const turno = document.getElementById("turno").value === undefined ? null : document.getElementById("turno").value
 	const xhttp = new XMLHttpRequest();
 	xhttp.open("POST", "http://127.0.0.1:4000/updateUser/", true);
 	xhttp.setRequestHeader(
@@ -496,7 +497,7 @@ function showLendAdmin(card) {
 	window.location.href = `../admin-devolutionview.html`
 }
 
-function showUser(card){
+function showUser(card) {
 	const parent = card.innerHTML.split("\n")
 	let id = ""
 	parent.forEach(e => {
@@ -594,7 +595,7 @@ function updateLend() {
 		if (this.readyState == 4 && this.status == 200) {
 			const response = JSON.parse(this.responseText)
 			if (response.status === 200) {
-				const data=response.result
+				const data = response.result
 				const dialog = document.getElementById("modal");
 				dialog.innerHTML = `<p>Prestamo devuelto.</p><p><button class="dialog-button" onclick="closeModal('admin-dashboard')">Cerrar</button></p>`;
 				window.modal.showModal();
