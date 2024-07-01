@@ -1,4 +1,3 @@
-import 'https://tomashubelbauer.github.io/github-pages-local-storage/index.js';
 document.addEventListener("DOMContentLoaded", function () {
 	if (window.location.href.includes("dashboard")) {
 		const navMenu = document.getElementById("nav-menu");
