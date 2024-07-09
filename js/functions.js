@@ -215,6 +215,7 @@ function login() {
 		if (this.readyState == 4 && this.status == 200) {
 			const response = JSON.parse(this.responseText)
 			if (response.status === 200) {
+				console.log(localStorage)
 				localStorage.setItem("user", JSON.stringify(response.data))
 				const dialog = document.getElementById("modal");
 				dialog.innerHTML = `<p>Bienvenido ${response.data.nombre}.</p><p><button class="dialog-button" onclick="closeModal('dashboard')">Cerrar</button></p>`;
