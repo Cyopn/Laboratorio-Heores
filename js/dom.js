@@ -33,9 +33,9 @@ document.addEventListener("DOMContentLoaded", function () {
 					document.getElementById("numero").value = data.movil;
 					document.getElementById("contraseña").value = data.contraseña;
 					document.getElementById("cargo").value = data.cargo;
-					document.getElementById("departamento").value = data.departamento === "null" ? "No aplica" : data.departamento;
-					document.getElementById("grupo").value = data.grupo === "null" ? "No aplica" : data.grupo;
-					document.getElementById("turno").value = data.turno === "null" ? "No aplica" : data.turno;
+					document.getElementById("departamento").value = data.departamento === null || data.departamento === "null" || data.departamento === "No aplica" ? "No aplica" : data.departamento;
+					document.getElementById("grupo").value = data.grupo === null || data.grupo === "null" ? "No aplica" : data.grupo;
+					document.getElementById("turno").value = data.turno === null || data.turno === "null" ? "No aplica" : data.turno;
 					document.getElementById("loader").style["display"] = "none";
 					document.getElementsByClassName("loader-background")[0].style["display"] = "none";
 					document.getElementById("update").style["opacity"] = 0.5;
