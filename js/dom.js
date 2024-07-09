@@ -1,12 +1,3 @@
-const setItem = localStorage.setItem;
-localStorage.constructor.prototype.setItem = (key, value) => setItem.apply(localStorage, [location.pathname + ':' + key, value])
-
-const getItem = localStorage.getItem;
-localStorage.constructor.prototype.getItem = (key) => getItem.apply(localStorage, [location.pathname + ':' + key]);
-
-const removeItem = localStorage.removeItem;
-localStorage.constructor.prototype.removeItem = (key) => removeItem.apply(localStorage, [location.pathname + ':' + key]);
-
 document.addEventListener("DOMContentLoaded", function () {
 	if (window.location.href.includes("dashboard")) {
 		const navMenu = document.getElementById("nav-menu");
@@ -18,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			navMenu.classList.toggle("active");
 		});
 	}
+	console.log(localStorage.getItem("user"))
 	if (localStorage.getItem("user") == null) {
 		const dialog = document.getElementById("modal");
 		dialog.innerHTML = `<p>Es necesario primero iniciar sesion.</p><p><button class="dialog-button" onclick="closeModal('login')">Aceptar</button></p>`;
