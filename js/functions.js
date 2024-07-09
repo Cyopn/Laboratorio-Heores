@@ -261,7 +261,7 @@ function updateSelfUser() {
 	);
 	xhttp.send(
 		JSON.stringify({
-			id: data.id_usuario, matricula, nombre, apellidos, username, numero, password, departamento, grupo, turno
+			id: data.id_usuario, matricula, nombre, apellidos, username, numero, password, departamento, grupo, turno, cargo
 		}),
 	);
 	xhttp.onreadystatechange = function () {
